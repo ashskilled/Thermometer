@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> 
+  <link rel="stylesheet" href="style.css">
+ 
+    <title>Temp</title>
+    <link rel="shortcut icon" href="favicon_io /android-chrome-192x192.png" type="image/ico">
+</head>
+<body>
+    <section>
+       
+
+        <h1><i class="fa fa-thermometer-empty" aria-hidden="true"></i> Convert Farenheit  to  Celcius(°C to °F)  
+         <i class="fa fa-thermometer-empty" aria-hidden="true"></i> </h1>
+    <div>
+        <br>
+        <input type="number" name="1" placeholder="Enter Farenheit Degree" 
+        id="fd"> 
+        <button onclick="changeDeg()"> Change to Celcius </button>
+        <input type="text" name="2" placeholder="Degree in Celcius"
+        id="cd" >
+        
+      
+      </div>
+      </section>
+      
+      <script>  
+        
+          const changeDeg = () =>{
+          const fv = document.getElementById('fd').value;
+      
+          // T(°C) = (T(°F) - 32) × 5/9
+      
+          let newcv = (fv - 32) * 5/9;
+    
+      
+          document.getElementById('cd').value = newcv+"* celcius";
+        }
+      </script>
+
+</body>
+</html>
